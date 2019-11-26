@@ -2,15 +2,27 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mavendemo" />
+        <module name="MQ" />
+        <module name="springboot-demo" />
+        <module name="excel_poi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="excel_poi" target="1.8" />
       <module name="mavendemo" target="1.8" />
+      <module name="MQ" target="1.8" />
+      <module name="springboot-demo" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-demo" options="-parameters" />
+    </option>
   </component>
 </project>
